@@ -1,0 +1,32 @@
+﻿<Window x:Class="A05Client.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:A05Client"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <TextBox x:Name="ip" TextWrapping="Wrap" Margin="29,70,602,311"  BorderThickness="2" />
+        <Button x:Name="connect" Content="Connect" HorizontalAlignment="Left" Margin="705,70,0,0" VerticalAlignment="Top" Click="Button_Click" BorderThickness="2" Height="22" Width="66"/>
+        <TextBlock HorizontalAlignment="Left" Margin="29,40,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="27" Width="82" RenderTransformOrigin="0.344,0.541"><Run Text="IP Address"/><Run Language="fr-fr" Text=":"/></TextBlock>
+        <TextBox x:Name="port" BorderThickness="2" TextWrapping="Wrap" Margin="264,70,456,311" />
+        <TextBlock HorizontalAlignment="Left" Margin="262,41,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="27" Width="82"><Run Language="fr-fr" Text="Port:"/></TextBlock>
+        <TextBox x:Name="username" BorderThickness="2" TextWrapping="Wrap" Margin="400,72,301,311" />
+        <TextBlock HorizontalAlignment="Left" Margin="400,40,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="27" Width="82"><Run Language="fr-fr" Text="User Name"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="545,40,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="27" Width="82"><Run Language="fr-fr" Text="Set Timer:"/></TextBlock>
+        <TextBox x:Name="timeInput" BorderThickness="2" TextWrapping="Wrap" Margin="545,72,173,311" Text="00:01:00&#xD;&#xA;" />
+        <TextBlock x:Name="error" Margin="0,356,0,10" TextWrapping="Wrap" Foreground="Red" />
+        <TextBlock x:Name="greeting" HorizontalAlignment="Left" Margin="203,123,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="357" Height="63" Foreground="BlueViolet" FontSize="16"/>
+        <TextBlock x:Name="chars" HorizontalAlignment="Left" Margin="10,0,0,0" TextWrapping="Wrap" VerticalAlignment="Center" Width="761" Height="29" FontSize="14"/>
+        <Button x:Name="checkword" IsEnabled="False" Content="Check" HorizontalAlignment="Left" Margin="372,288,0,0" VerticalAlignment="Top" Click="Checkword"/>
+        <TextBlock x:Name="remainwords" HorizontalAlignment="Left" Margin="605,143,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="68" Height="32" />
+        <TextBlock x:Name="timerText" HorizontalAlignment="Left" Margin="688,143,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="57" Height="43" FontSize="14" Text=""/>
+        <TextBlock HorizontalAlignment="Left" Margin="696,122,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Language="fr-fr" Text="Timer"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="597,122,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="84" Height="16"><Run Language="fr-fr" Text="Remainigwords"/></TextBlock>
+        <TextBox x:Name="wordtocheck" HorizontalAlignment="Left" Margin="330,265,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBlock HorizontalAlignment="Left" Margin="330,244,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="126"><Run Language="fr-fr" Text="Enter your word here"/></TextBlock>
+        <Button x:Name="tryagain" Visibility="Hidden" Content="Try Again" HorizontalAlignment="Left" Margin="350,313,0,0" VerticalAlignment="Top"  Height="20" Width="84" Click="tryAgain"/>
+
+    </Grid>
+</Window>
